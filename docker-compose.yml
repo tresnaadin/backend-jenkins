@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
     backend:
-        image: kamriyadin/jenkins-backend:main
+        image: tresnaadin/jenkins-backend:main
         container_name: backend-express
         ports:
             - 4321:4321
@@ -17,7 +17,7 @@ services:
             - REDIS_PASSWORD=redis123
             - DB_HOST=postgres
             - DB_USER=postgres
-            - DB_PASSWORD=tambora123
+            - DB_PASSWORD=dugata23
             - DB_NAME=tokokopi
             - JWT_KEYS=testpass123
         deploy:
@@ -33,7 +33,7 @@ services:
         container_name: postgres
         environment:
             - POSTGRES_USER=postgres
-            - POSTGRES_PASSWORD=tambora123
+            - POSTGRES_PASSWORD=dugata23
             - POSTGRES_DB=tokokopi
         ports:
             - 5432:5432
